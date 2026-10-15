@@ -41,7 +41,7 @@ export enum HideableSidebarItemID {
 
 export const HIDEABLE_SIDEBAR_ITEM_IDS = Object.values(HideableSidebarItemID)
 
-export const PAPERLESS_GREEN_HEX = '#17541f'
+export const PAPERLESS_GREEN_HEX = '#12285a'
 
 export const SETTINGS_KEYS = {
   VERSION: 'version',

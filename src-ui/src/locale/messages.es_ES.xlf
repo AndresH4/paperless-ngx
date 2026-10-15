@@ -1895,7 +1895,7 @@
           <context context-type="sourcefile">src/app/data/document.ts</context>
           <context context-type="linenumber">89</context>
         </context-group>
-        <target state="final">Interlocutor</target>
+        <target state="final">Empleado</target>
       </trans-unit>
       <trans-unit id="5066119607229701477" datatype="html" approved="yes">
         <source>Document type</source>
@@ -3879,7 +3879,7 @@
           <context context-type="sourcefile">src/app/components/manage/document-attributes/document-attributes.component.ts</context>
           <context context-type="linenumber">95</context>
         </context-group>
-        <target state="final">Interlocutores</target>
+        <target state="final">Empleados</target>
       </trans-unit>
       <trans-unit id="3079652255369035" datatype="html">
         <source>Document types</source>
@@ -4143,7 +4143,7 @@
           <context context-type="sourcefile">src/app/components/app-frame/global-search/global-search.component.html</context>
           <context context-type="linenumber">104,105</context>
         </context-group>
-        <target state="translated">Interlocutores</target>
+        <target state="translated">Empleados</target>
       </trans-unit>
       <trans-unit id="searchResults.documentTypes" datatype="html">
         <source>Document types</source>
@@ -5135,7 +5135,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/correspondent-edit-dialog/correspondent-edit-dialog.component.ts</context>
           <context context-type="linenumber">43</context>
         </context-group>
-        <target state="final">Crear nuevo interlocutor</target>
+        <target state="final">Crear nuevo empleado</target>
       </trans-unit>
       <trans-unit id="2059822531169388684" datatype="html" approved="yes">
         <source>Edit correspondent</source>
@@ -5143,7 +5143,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/correspondent-edit-dialog/correspondent-edit-dialog.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
-        <target state="final">Editar interlocutor</target>
+        <target state="final">Editar empleado</target>
       </trans-unit>
       <trans-unit id="4894226280476434291" datatype="html">
         <source>Data type</source>
@@ -5631,7 +5631,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/mail-rule-edit-dialog/mail-rule-edit-dialog.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
-        <target state="translated">Asignar interlocutor desde</target>
+        <target state="translated">Asignar empleado desde</target>
       </trans-unit>
       <trans-unit id="4875491778188965469" datatype="html">
         <source>Assign correspondent</source>
@@ -5643,7 +5643,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/workflow-edit-dialog/workflow-edit-dialog.component.html</context>
           <context context-type="linenumber">266</context>
         </context-group>
-        <target state="translated">Asignar interlocutor</target>
+        <target state="translated">Asignar empleado</target>
       </trans-unit>
       <trans-unit id="1519954996184640001" datatype="html">
         <source>Error</source>
@@ -5823,7 +5823,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/mail-rule-edit-dialog/mail-rule-edit-dialog.component.ts</context>
           <context context-type="linenumber">127</context>
         </context-group>
-        <target state="translated">No asignar un interlocutor</target>
+        <target state="translated">No asignar un empleado</target>
       </trans-unit>
       <trans-unit id="3567746385454588269" datatype="html">
         <source>Use mail address</source>
@@ -5847,7 +5847,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/mail-rule-edit-dialog/mail-rule-edit-dialog.component.ts</context>
           <context context-type="linenumber">139</context>
         </context-group>
-        <target state="translated">Usar el interlocutor seleccionado a continuación</target>
+        <target state="translated">Usar el empleado seleccionado a continuación</target>
       </trans-unit>
       <trans-unit id="3178554336792037159" datatype="html">
         <source>Error retrieving mail accounts</source>
@@ -6571,7 +6571,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/workflow-edit-dialog/workflow-edit-dialog.component.html</context>
           <context context-type="linenumber">326,327</context>
         </context-group>
-        <target state="translated">Eliminar interlocutores</target>
+        <target state="translated">Eliminar empleados</target>
       </trans-unit>
       <trans-unit id="5305293055593064952" datatype="html">
         <source>Remove document types</source>
@@ -7015,7 +7015,7 @@
           <context context-type="sourcefile">src/app/components/common/edit-dialog/workflow-edit-dialog/workflow-edit-dialog.component.ts</context>
           <context context-type="linenumber">284</context>
         </context-group>
-        <target state="translated">Tiene interlocutor</target>
+        <target state="translated">Tiene empleado</target>
       </trans-unit>
       <trans-unit id="6884498632428600393" datatype="html">
         <source>Does not have correspondents</source>
@@ -8933,7 +8933,7 @@
           <context context-type="sourcefile">src/app/components/document-list/document-list.component.html</context>
           <context context-type="linenumber">320</context>
         </context-group>
-        <target state="final">Filtrar por interlocutor</target>
+        <target state="final">Filtrar por empleado</target>
       </trans-unit>
       <trans-unit id="78870852467682010" datatype="html">
         <source>Filter by document type</source>
@@ -10195,7 +10195,7 @@
           <context context-type="sourcefile">src/app/components/document-list/filter-editor/filter-editor.component.html</context>
           <context context-type="linenumber">51</context>
         </context-group>
-        <target state="final">Filtrar interlocutores</target>
+        <target state="final">Filtrar empleados</target>
       </trans-unit>
       <trans-unit id="2947613869920454977" datatype="html" approved="yes">
         <source>Filter document types</source>
@@ -10389,7 +10389,7 @@
           <context context-type="sourcefile">src/app/components/document-list/bulk-editor/bulk-editor.component.ts</context>
           <context context-type="linenumber">595</context>
         </context-group>
-        <target state="final">Confirmar asignación interlocutor</target>
+        <target state="final">Confirmar asignación empleado</target>
       </trans-unit>
       <trans-unit id="6900893559485781849" datatype="html">
         <source>This operation will assign the correspondent &quot;<x id="PH" equiv-text="correspondent.name"/>&quot; to <x id="PH_1" equiv-text="this.getSelectionSize()"/> selected document(s).</source>
@@ -10783,7 +10783,7 @@
           <context context-type="sourcefile">src/app/components/document-list/document-card-small/document-card-small.component.html</context>
           <context context-type="linenumber">47</context>
         </context-group>
-        <target state="translated">Cambiar filtro de interlocutores</target>
+        <target state="translated">Cambiar filtro de empleados</target>
       </trans-unit>
       <trans-unit id="5319701482646590642" datatype="html">
         <source>Toggle document type filter</source>
@@ -11007,7 +11007,7 @@
           <context context-type="sourcefile">src/app/components/document-list/document-list.component.html</context>
           <context context-type="linenumber">204</context>
         </context-group>
-        <target state="translated">Filtrar por interlocutor</target>
+        <target state="translated">Filtrar por empleado</target>
       </trans-unit>
       <trans-unit id="2066713941761361709" datatype="html">
         <source>Sort by title</source>
@@ -11323,7 +11323,7 @@
           <context context-type="sourcefile">src/app/components/document-list/filter-editor/filter-editor.component.ts</context>
           <context context-type="linenumber">303</context>
         </context-group>
-        <target state="final">Sin interlocutor</target>
+        <target state="final">Sin empleado</target>
       </trans-unit>
       <trans-unit id="317796810569008208" datatype="html">
         <source>Document type: <x id="PH" equiv-text="this.documentTypeSelectionModel.items.find(                 (dt) =&gt; dt.id == +rule.value               )?.name"/></source>
@@ -11679,7 +11679,7 @@
           <context context-type="sourcefile">src/app/components/manage/document-attributes/management-list/correspondent-list/correspondent-list.component.ts</context>
           <context context-type="linenumber">46</context>
         </context-group>
-        <target state="translated">interlocutor</target>
+        <target state="translated">empleado</target>
       </trans-unit>
       <trans-unit id="1612355304340685070" datatype="html">
         <source>correspondents</source>
@@ -11687,7 +11687,7 @@
           <context context-type="sourcefile">src/app/components/manage/document-attributes/management-list/correspondent-list/correspondent-list.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
-        <target state="translated">interlocutores</target>
+        <target state="translated">empleados</target>
       </trans-unit>
       <trans-unit id="6360600151505327572" datatype="html">
         <source>Last used</source>
@@ -11703,7 +11703,7 @@
           <context context-type="sourcefile">src/app/components/manage/document-attributes/management-list/correspondent-list/correspondent-list.component.ts</context>
           <context context-type="linenumber">77</context>
         </context-group>
-        <target state="final">¿Estás seguro de querer borrar el interlocutor "<x id="PH" equiv-text="object.name"/>"?</target>
+        <target state="final">¿Estás seguro de querer borrar el empleado "<x id="PH" equiv-text="object.name"/>"?</target>
       </trans-unit>
       <trans-unit id="8084492669582894778" datatype="html">
         <source>document type</source>

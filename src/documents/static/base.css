@@ -1,10 +1,10 @@
 body {
   --bs-body-bg: #f5f5f5;
-  --bs-link-color-rgb: 23, 84, 31; /* #17541f */
-  --bs-link-hover-color-rgb: 15, 56, 20;
-  --pngx-primary: #17541f;
-  --pngx-primary-hover: #0f3614;
-  --pngx-primary-active: #0c2c10;
+  --bs-link-color-rgb: 18, 40, 90; /* #12285a */
+  --bs-link-hover-color-rgb: 13, 30, 69;
+  --pngx-primary: #12285a;
+  --pngx-primary-hover: #0d1e45;
+  --pngx-primary-active: #0a1737;
 }
 
 .logo {
@@ -28,9 +28,9 @@ body {
   --bs-btn-bg: var(--pngx-primary);
   --bs-btn-border-color: var(--pngx-primary);
   --bs-btn-hover-bg: var(--pngx-primary-hover);
-  --bs-btn-hover-border-color: #0c2c10;
+  --bs-btn-hover-border-color: #0a1737;
   --bs-btn-active-bg: var(--pngx-primary-active);
-  --bs-btn-active-border-color: #09220d;
+  --bs-btn-active-border-color: #070f26;
 }
 
 .btn-link {
@@ -47,7 +47,7 @@ body {
 .form-stacked-top input {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0; 
 }
 
 .form-stacked-middle input {
@@ -72,6 +72,47 @@ body {
   z-index: 101;
 }
 
+.login-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.login-panel {
+  flex: 0 0 480px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--bs-body-bg);
+}
+
+.login-panel .from-accounts {
+  width: 100%;
+}
+
+.login-panel .logo {
+  max-width: 100%;
+}
+
+.login-image {
+  flex: 1 1 auto;
+  background-image: url('login-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .login-image {
+    display: none;
+  }
+  .login-panel {
+    flex: 1 1 auto;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   /* From theme_dark.scss */
   body {
@@ -80,15 +121,12 @@ body {
     --bs-body-color-rgb: 171, 178, 191;
     --bs-border-color: #47494f;
   }
-
   .form-control, .form-floating {
     --bs-body-bg: #1c1c1f;
   }
-
   svg.logo .text {
     fill: #abb2bf !important;
   }
-
   .byline {
     color: #abb2bf;
   }
