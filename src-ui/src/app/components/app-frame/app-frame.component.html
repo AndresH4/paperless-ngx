@@ -10,7 +10,7 @@
     routerLink="/dashboard"
     tourAnchor="tour.intro">
       @if (!hasCustomBranding) {
-        <pngx-logo extra_classes="navbar-official-logo px-1" height="2.4rem"></pngx-logo>
+        <pngx-logo extra_classes="navbar-official-logo px-1" height="3.2rem"></pngx-logo>
         <pngx-brand-mark class="brand-mark brand-mark-slim d-none"></pngx-brand-mark>
       } @else {
         @if (customAppLogo) {
@@ -250,18 +250,6 @@
                 <pngx-input-switch class="position-absolute top-50 end-0 translate-middle-y me-1" [class.d-none]="slimSidebarEnabled || slimSidebarAnimating()" [compact]="true" title="Saved Views" i18n-title [ngModel]="!settingsService.sidebarItemIsHidden(HideableSidebarItemID.SavedViews)" (ngModelChange)="toggleSidebarItem(HideableSidebarItemID.SavedViews, $event)"></pngx-input-switch>
               }
             </li>
-            @if (canManageShareLinks) {
-              <li class="nav-item app-link position-relative" [class.d-none]="settingsService.sidebarItemIsHidden(HideableSidebarItemID.ShareLinks) && !settingsService.organizingSidebarItems()">
-                <a class="nav-link" [class.opacity-50]="settingsService.sidebarItemIsHidden(HideableSidebarItemID.ShareLinks)" [class.pe-5]="settingsService.organizingSidebarItems() && !slimSidebarEnabled && !slimSidebarAnimating()" routerLink="share-links" routerLinkActive="active" (click)="closeMenu()"
-                  ngbPopover="Share links" i18n-ngbPopover [disablePopover]="!slimSidebarPopoversEnabled" placement="end"
-                  container="body" triggers="mouseenter:mouseleave" popoverClass="popover-slim">
-                  <i-bs class="me-2" name="link"></i-bs><span class="nav-link-label"><ng-container i18n>Share links</ng-container></span>
-                </a>
-                @if (settingsService.organizingSidebarItems()) {
-                  <pngx-input-switch class="position-absolute top-50 end-0 translate-middle-y me-1" [class.d-none]="slimSidebarEnabled || slimSidebarAnimating()" [compact]="true" title="Share Links" i18n-title [ngModel]="!settingsService.sidebarItemIsHidden(HideableSidebarItemID.ShareLinks)" (ngModelChange)="toggleSidebarItem(HideableSidebarItemID.ShareLinks, $event)"></pngx-input-switch>
-                }
-              </li>
-            }
             <li class="nav-item app-link position-relative" [class.d-none]="settingsService.sidebarItemIsHidden(HideableSidebarItemID.Workflows) && !settingsService.organizingSidebarItems()"
               *pngxIfPermissions="{ action: PermissionAction.View, type: PermissionType.Workflow }"
               tourAnchor="tour.workflows">
@@ -346,63 +334,11 @@
                 </a>
               </li>
             }
-            <li class="nav-item mt-2 position-relative" [class.d-none]="settingsService.sidebarItemIsHidden(HideableSidebarItemID.Documentation) && !settingsService.organizingSidebarItems()" tourAnchor="tour.outro">
-              <a class="text-muted small d-flex align-items-center flex-wrap text-decoration-none nav-anchor" [class.opacity-50]="settingsService.sidebarItemIsHidden(HideableSidebarItemID.Documentation)" [class.pe-5]="settingsService.organizingSidebarItems() && !slimSidebarEnabled && !slimSidebarAnimating()"
-                target="_blank" rel="noopener noreferrer" href="https://docs.paperless-ngx.com" ngbPopover="Documentation"
-                i18n-ngbPopover [disablePopover]="!slimSidebarPopoversEnabled" placement="end" container="body"
-                triggers="mouseenter:mouseleave" popoverClass="popover-slim">
-                <i-bs class="d-flex me-2" name="question-circle"></i-bs><span><ng-container i18n>Documentation</ng-container></span>
-              </a>
-              @if (settingsService.organizingSidebarItems()) {
-                <pngx-input-switch class="position-absolute top-50 end-0 translate-middle-y me-1" [class.d-none]="slimSidebarEnabled || slimSidebarAnimating()" [compact]="true" title="Documentation" i18n-title [ngModel]="!settingsService.sidebarItemIsHidden(HideableSidebarItemID.Documentation)" (ngModelChange)="toggleSidebarItem(HideableSidebarItemID.Documentation, $event)"></pngx-input-switch>
-              }
-            </li>
             <li class="nav-item" [class.visually-hidden]="slimSidebarEnabled">
               <div class="text-muted small d-flex align-items-center flex-wrap nav-label">
                 <div class="me-2">
                   <span class="text-muted">{{ versionString }}</span>
                 </div>
-                @if (!settingsService.updateCheckingIsSet || appRemoteVersion()) {
-                  <div class="version-check d-flex align-items-center">
-                    <ng-template #updateAvailablePopContent>
-                      <span class="small">Paperless-ngx {{ appRemoteVersion().version }} <ng-container i18n>is
-                          available.</ng-container><br /><ng-container i18n>Click to view.</ng-container></span>
-                    </ng-template>
-                    <ng-template #updateCheckingNotEnabledPopContent>
-                      <p class="small mb-2">
-                        <ng-container i18n>Paperless-ngx can automatically check for updates</ng-container>
-                      </p>
-                      <div class="btn-group btn-group-xs flex-fill w-100">
-                        <button class="btn btn-outline-primary" (click)="setUpdateChecking(true)">Enable</button>
-                        <button class="btn btn-outline-secondary" (click)="setUpdateChecking(false)">Disable</button>
-                      </div>
-                      <p class="small mb-0 mt-2">
-                        <a class="small text-decoration-none fst-italic" routerLink="/settings" fragment="update-checking" i18n>
-                          How does this work?
-                        </a>
-                      </p>
-                    </ng-template>
-                    @if (settingsService.updateCheckingIsSet) {
-                      @if (appRemoteVersion().update_available) {
-                        <a class="small text-decoration-none" target="_blank" rel="noopener noreferrer"
-                          href="https://github.com/paperless-ngx/paperless-ngx/releases"
-                          [ngbPopover]="updateAvailablePopContent" popoverClass="shadow" triggers="mouseenter:mouseleave"
-                          container="body">
-                          <i-bs width="1.2em" height="1.2em" name="info-circle" class="me-1"></i-bs>
-                          @if (appRemoteVersion()?.update_available) {
-                            <ng-container i18n>Update available</ng-container>
-                          }
-                        </a>
-                      }
-                    } @else {
-                      <a  *pngxIfPermissions="{ action: PermissionAction.Change, type: PermissionType.UISettings }" class="small text-decoration-none" routerLink="/settings" fragment="update-checking" aria-label="Configure update checking" i18n-aria-label
-                        [ngbPopover]="updateCheckingNotEnabledPopContent" popoverClass="shadow" triggers="mouseenter"
-                        container="body">
-                        <i-bs width="1.2em" height="1.2em" name="info-circle"></i-bs>
-                      </a>
-                    }
-                  </div>
-                }
               </div>
             </li>
           </ul>

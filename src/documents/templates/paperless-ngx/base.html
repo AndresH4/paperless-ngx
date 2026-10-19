@@ -21,7 +21,7 @@
             <form class="form-accounts" id="form-account" method="post">
                 {% csrf_token %}
                 {% if not APP_LOGO and not APP_TITLE %}
-                    {% include "paperless-ngx/snippets/svg_logo.html" with extra_attrs="width='300' class='logo mb-4'" %}
+                    <img src="{% static 'logo-cosinte.png' %}" width="300" class="logo mb-4" alt="Cosinte LTDA">
                 {% else %}
                     {% if APP_LOGO %}
                         <img src="{{APP_LOGO}}" width="300" class="logo mb-1" />
